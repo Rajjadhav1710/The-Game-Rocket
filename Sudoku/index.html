@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/pastime.png" type="image/x-icon">
+</head>
+<body> 
+    <!-- HEADER OF THE WEBSITE -->
+    <header class="site-header">
+        <div class="sudoku-logo">
+            <img src="img/pastime.png" alt="sudoku-logo">
+        </div>
+        <div class="heading">
+            <h1><span>S</span>udoku</h1>
+        </div>
+        <div class="navigation-links">
+            <a href="#sudoku-info">About Sudoku</a>
+            <a href="#how-to-play-sudoku">How To Play</a>
+            <a href="#sudoku-tips">Sudoku Tips</a>
+        </div>
+    </header>
+    <!-- HEADER ENDS -->
+    
+    <!-- GAME STARTS -->
+    <div class="sudoku-wrapper">
+        <div class="game-info-wrapper">
+            <div class="timer-wrapper">
+                <span class="timer" id="timer_text">00:00</span>
+                <div class="timer-play-pause button" id="play_pause_button">
+                    <div class="icon-pause" id="icon_pause"></div>
+                    <div class="icon-play" id="icon_play"></div>
+                </div>
+            </div>
+        </div>
+        <div class="game-wrapper">
+            <div class="sudoku-board-wrapper">
+                <div class="sudoku-board">
+                    <canvas width="425" height="425" id="sudoku_board">
+                        Your Browser Does Not Support HTML5 Canvas.
+                        This Is Where The Sudoku Appears.
+                    </canvas>
+                </div>
+            </div>
+            <div class="game-controls-wrapper">
+                <nav>
+                    <div class="new-game-button-wrapper">
+                        <div class="new-game-button" id="new_game_button">New Game</div>
+                    </div>
+                    <div class="game-controls">
+                        <div class="game-controls-item-wrap">
+                            <div class="game-controls-item game-controls-erase button" id="erase_button"></div>
+                            <div class="game-controls-label">Erase</div>
+                        </div>
+                    </div>
+                    <div class="numpad-wrapper">
+                        <div class="numpad">
+                            <div class="numpad-row">
+                                <div class="numpad-item button" data-value="1">1</div>
+                                <div class="numpad-item button" data-value="2">2</div>
+                                <div class="numpad-item button" data-value="3">3</div>
+                            </div>
+                            <div class="numpad-row">
+                                <div class="numpad-item button" data-value="4">4</div>
+                                <div class="numpad-item button" data-value="5">5</div>
+                                <div class="numpad-item button" data-value="6">6</div>
+                            </div>
+                            <div class="numpad-row">
+                                <div class="numpad-item button" data-value="7">7</div>
+                                <div class="numpad-item button" data-value="8">8</div>
+                                <div class="numpad-item button" data-value="9">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-game-button-wrapper">
+                        <div class="submit-game-button" id="submit_button">Submit</div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- GAME ENDS -->
+
+    <!-- GAME ARTICLE STARTS-->
+    <article class="game-article">
+        <section class="sudoku-info" id="sudoku-info">
+            <h1>Sudoku : " The Numbers Must Remain Single. "</h1>
+            <p>
+                Sudoku is one of the most popular puzzle games of all time. The goal of Sudoku is to fill a 9×9 grid with numbers so that each row, column and 3×3 section contain all of the digits between 1 and 9. As a logic puzzle, Sudoku is also an excellent brain game. If you play Sudoku daily, you will soon start to see improvements in your concentration and overall brain power. Start a game now. Within no time Sudoku  puzzles will be your favorite online game.
+            </p>
+        </section>
+        <section class="about-sudoku">
+            <h1>About Sudoku</h1>
+            <p>
+                The popular Japanese puzzle game Sudoku is based on the logical placement of numbers. An online game of logic, Sudoku doesn’t require any calculation nor special math skills; all that is needed are brains and concentration.
+            </p>
+        </section>
+        <section class="how-to-play-sudoku" id="how-to-play-sudoku">
+            <h1>How To Play Sudoku</h1>
+            <p>
+                The goal of Sudoku is to fill in a 9×9 grid with digits so that each column, row, and 3×3 section contain the numbers between 1 to 9. At the beginning of the game, the 9×9 grid will have some of the squares filled in. Your job is to use logic to fill in the missing digits and complete the grid. Don’t forget, a move is incorrect if:
+            </p>
+            <div class="game-rules">
+                <ul>
+                    <li>Any row contains more than one of the same number from 1 to 9</li>
+                    <li>Any column contains more than one of the same number from 1 to 9</li>
+                    <li>Any 3×3 grid contains more than one of the same number from 1 to 9</li>
+                </ul>
+            </div>
+        </section>
+        <section class="sudoku-tips" id="sudoku-tips">
+            <h1>Sudoku Tips</h1>
+            <p>
+                Sudoku is a fun puzzle game once you get the hang of it. At the same time, learning to play Sudoku can be a bit intimidating for beginners. So, if you are a complete beginner, here are a few Sudoku tips that you can use to improve your Sudoku skills.
+            </p>
+            <div class="sudoku-tips-list">
+                <ul>
+                    <li>
+                        Tip 1: Look for rows, columns of 3×3 sections that contain 5 or more numbers. Work through the remaining empty cells, trying the numbers that have not been used. In many cases, you will find numbers that can only be placed in one position considering the other numbers that are already in its row, column, and 3×3 grid.
+                    </li>
+                    <li>
+                        Tip 2: Break the grid up visually into 3 columns and 3 rows. Each large column will have 3, 3×3 grids and each row will have 3, 3×3 grids. Now, look for columns or grids that have 2 of the same number. Logically, there must be a 3rd copy of the same number in the only remaining 9-cell section. Look at each of the remaining 9 positions and see if you can find the location of the missing number.
+                    </li>
+                </ul>
+            </div>
+            <p>Now that you know a little more about Sudoku, play and enjoy this free online game.</p>
+        </section>
+    </article>
+    <!-- GAME ARTICLE ENDS -->
+
+    <!-- FOOTER OF THE WEBSITE -->
+    <footer class="site-footer">
+        <div class="site-footer-bar">
+            <div class="footer-info">
+                <div class="footer-heading">
+                    <h1><span>S</span>udoku</h1>
+                </div>
+                <div class="copy-right">
+                   <p>©2021  All Rights Reserved.</p> 
+                </div>
+            </div>
+            <div class="sudoku-logo">
+                <img src="img/pastime.png" alt="sudoku-logo">
+            </div>
+        </div>
+        <div class="attribution">
+            <p>The whole project is made for learning. Special thanks to <a href="https://sudoku.com/">sudoku.com</a> which I have used in making this project.</p>
+        </div>
+    </footer>
+    <!-- FOOTER ENDS -->
+    
+    <script src="scripts/game.js"></script>
+</body>
+</html>
