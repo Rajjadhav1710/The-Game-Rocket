@@ -30,19 +30,19 @@ const timerText=document.getElementById("timer_text");
 
 // LOAD SUDOKU BOARD IMAGE
 const sudokuBoardImg=new Image();
-sudokuBoardImg.src="/Sudoku/img/sudoku.png";
+sudokuBoardImg.src="../img/sudoku.png";
 
 // LOAD PLAY BUTTON IMAGE
 const playBtn=new Image();
-playBtn.src="/Sudoku/img/play.png";
+playBtn.src="../img/play.png";
 
 // LOAD SUCCESS IMAGE
 const successImg=new Image();
-successImg.src="/Sudoku/img/trophy.png";
+successImg.src="../img/trophy.png";
 
 // LOAD FAILURE IMAGE
 const failureImg=new Image();
-failureImg.src="/Sudoku/img/lose.png";
+failureImg.src="../img/lose.png";
 
 // REQUIRED EMPTY CELLS AND CURRENT EMPTY CELLS IN QUESTION.
 const requiredEmptyCells = 49;
