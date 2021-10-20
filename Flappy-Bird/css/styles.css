@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #000000;
+    color: white;
+    user-select: none;
+}
+
+/* STYLES FOR HEADER STARTS */
+.site-header{
+    
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+}
+
+.flappy-bird-icon img{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    margin-left: 20px;
+    border: 2px solid #88FFF7;
+    border-radius: 50%;
+}
+/* STYLES FOR HEADER ENDS */
+
+/* STYLES FOR GAME BANNER STARTS */
+.game-banner{
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-heading h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10vw;
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* STYLES FOR GAME BANNER ENDS */
+
+/* STYLES FOR GAME PLAY MESSAGE STARTS */
+.game-play-message{
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100vh;
+}
+
+.game-play-message h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    margin: 0;
+    text-align: center;
+    line-height: 100vh;
+}
+/* STYLES FOR GAME PLAY MESSAGE ENDS */
+
+/* STYLES FOR GAME STARTS */
+.game-container{
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #082032;
+}
+/* STYLES FOR GAME ENDS */
+
+/* STYLES FOR GAME ARTICLE STARTS */
+.game-article{
+   
+}
+
+.about-game{
+   
+}
+
+.what-is-flappy-bird{
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 100vh;
+}
+
+.what-is-flappy-bird h2{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 8vw;
+    margin: 0;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.game-info :nth-child(odd){
+    background-color: #082032;
+}
+
+.game-info-section{
+    border-bottom: 2px solid #88FFF7;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-info-image img{
+    width: 320px;
+    height: 480px;
+}
+
+.game-info-section p{
+    flex: 0.5;
+    text-align: center;
+}
+
+.game-image{
+
+    border-radius: 5px;
+    box-shadow: 1em 1em 2em 2px rgb(0 0 0 / 100%);
+
+    /* -webkit-transform: rotateZ(-2deg); */
+    /* transform: rotateZ(-2deg); */
+
+}
+/* STYLES FOR GAME ARTICLE ENDS */
+
+/* STYLES FOR FOOTER STARTS */
+.site-footer-bar{
+    display: flex;
+    align-items: center;
+    height: 250px;
+}
+
+.footer-heading h3{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5vw;
+    margin: 0;
+    text-align: center;
+}
+
+.copy-right p{
+    text-align: center;
+    font-size: 13px;
+}
+
+.footer-flappy-bird-icon{
+    flex: 2;
+    text-align: right;
+}
+
+.footer-flappy-bird-icon img{
+    width: 60px;
+    height: 60px;
+    margin: 10px 0;
+    margin-right: 20px;
+    border: 2px solid #88FFF7;
+    border-radius: 50%;
+}
+
+.footer-info{
+    margin-left: 20px;
+}
+/* STYLES FOR FOOTER ENDS */
