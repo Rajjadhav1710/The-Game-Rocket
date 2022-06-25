@@ -49,12 +49,20 @@ li{
     margin-right: 1%;
 }
 
+.navbar{
+    padding-left: 0;
+}
+
 .navigation-links a{
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
     color: hsl(210, 100%, 45%);
     margin: 0 20px;
+}
+
+.navbar-nav{
+    margin-top: 0;
 }
 
 .navigation-links{
@@ -122,18 +130,20 @@ li{
     flex-wrap: wrap;
 }
 
-/* .sudoku-board-wrapper{
-
-} */
+.sudoku-board-wrapper{
+    margin-bottom: 1rem;
+}
 
 .game-controls-wrapper{
-    width: 25%;
-    margin-left: 20px;
+    /* width: 25%; */
+    /* margin-left: 20px; */
 }
 
 nav{
     display: flex;
     flex-direction: column;
+    padding: 0 2rem;
+    
 }
 
 .new-game-button-wrapper{
@@ -338,3 +348,10 @@ ul{
     margin-right: 3%;
 }
 /* STYLES FOR FOOTER ENDS */
+
+@media (max-width:460px) {
+    #sudoku_board{
+        width: 300px;
+        height: 300px;
+    }
+}

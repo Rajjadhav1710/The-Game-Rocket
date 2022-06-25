@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,11 +15,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
 
-    <link rel="shortcut icon" href="img/pastime.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/rocket-6.png" type="image/x-icon">
 </head>
 <body> 
     <!-- HEADER OF THE WEBSITE -->
-    <header class="site-header">
+    <!-- <header class="site-header">
         <div class="sudoku-logo">
             <img src="img/pastime.png" alt="sudoku-logo">
         </div>
@@ -30,7 +31,33 @@
             <a href="#how-to-play-sudoku">How To Play</a>
             <a href="#sudoku-tips">Sudoku Tips</a>
         </div>
-    </header>
+    </header> -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand sudoku-logo" href="../index.html">
+            <img src="../img/rocket-6.png" alt="site-logo" style="width: 60px;height: 60px;">
+          </a>
+          <div class="heading">
+            <h1><span>S</span>udoku</h1>
+        </div>
+          <button class="navbar-toggler"  type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>📂</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#sudoku-info">About Sudoku</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#how-to-play-sudoku">How To Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#sudoku-tips">Sudoku Tips</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- HEADER ENDS -->
     
     <!-- GAME STARTS -->
@@ -44,16 +71,16 @@
                 </div>
             </div>
         </div>
-        <div class="game-wrapper">
-            <div class="sudoku-board-wrapper">
-                <div class="sudoku-board">
+        <div class="row game-wrapper">
+            <div class="col-lg-6 sudoku-board-wrapper">
+                <div class="d-flex justify-content-center sudoku-board">
                     <canvas width="425" height="425" id="sudoku_board">
                         Your Browser Does Not Support HTML5 Canvas.
                         This Is Where The Sudoku Appears.
                     </canvas>
                 </div>
             </div>
-            <div class="game-controls-wrapper">
+            <div class="col-lg-6 col-md-8 game-controls-wrapper">
                 <nav>
                     <div class="new-game-button-wrapper">
                         <div class="new-game-button" id="new_game_button">New Game</div>
@@ -144,14 +171,16 @@
         <div class="site-footer-bar">
             <div class="footer-info">
                 <div class="footer-heading">
-                    <h1><span>S</span>udoku</h1>
+                    <h1><span>T</span>he Game Rocket</h1>
                 </div>
                 <div class="copy-right">
-                   <p>©2021  All Rights Reserved.</p> 
+                   <p>©2022  All Rights Reserved.</p> 
                 </div>
             </div>
             <div class="sudoku-logo">
-                <img src="img/pastime.png" alt="sudoku-logo">
+                <a href="../index.html">
+                    <img src="../img/rocket-6.png" alt="sudoku-logo">
+                </a>
             </div>
         </div>
         <div class="attribution">
@@ -159,7 +188,7 @@
         </div>
     </footer>
     <!-- FOOTER ENDS -->
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="game.js"></script>
 </body>
 </html>

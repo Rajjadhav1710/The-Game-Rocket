@@ -13,6 +13,16 @@ body{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation-links p{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 0;
+    font-weight: bold;
 }
 
 .flappy-bird-icon img{
@@ -20,8 +30,8 @@ body{
     height: 60px;
     margin: 10px 0;
     margin-left: 20px;
-    border: 2px solid #88FFF7;
-    border-radius: 50%;
+    /* border: 2px solid #88FFF7; */
+    /* border-radius: 50%; */
 }
 /* STYLES FOR HEADER ENDS */
 
@@ -38,10 +48,15 @@ body{
 
 .game-heading h1{
     font-family: 'Bebas Neue', cursive;
-    font-size: 10vw;
+    font-size: 7rem;
     text-align: center;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.game-heading p{
+    text-align: center;
+    margin: 0 1rem;
 }
 
 
@@ -57,7 +72,7 @@ body{
 
 .game-play-message h2{
     font-family: 'Bebas Neue', cursive;
-    font-size: 8vw;
+    font-size: 4rem;
     margin: 0;
     text-align: center;
     line-height: 100vh;
@@ -90,14 +105,17 @@ body{
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .what-is-flappy-bird h2{
     font-family: 'Bebas Neue', cursive;
-    font-size: 8vw;
+    font-size: 4rem;
     margin: 0;
     text-align: center;
-    line-height: 100vh;
+    /* line-height: 100vh; */
 }
 
 .game-info :nth-child(odd){
@@ -108,11 +126,16 @@ body{
     border-bottom: 2px solid #88FFF7;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh;
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* height: 100vh; */
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.game-info-image{
+    text-align: center;
 }
 
 .game-info-image img{
@@ -121,8 +144,10 @@ body{
 }
 
 .game-info-section p{
-    flex: 0.5;
+    /* flex: 0.5; */
     text-align: center;
+    /* margin: 3rem 1rem; */
+    padding: 3rem 1rem;
 }
 
 .game-image{
@@ -145,7 +170,7 @@ body{
 
 .footer-heading h3{
     font-family: 'Bebas Neue', cursive;
-    font-size: 5vw;
+    font-size: 3rem;
     margin: 0;
     text-align: center;
 }
@@ -165,11 +190,22 @@ body{
     height: 60px;
     margin: 10px 0;
     margin-right: 20px;
-    border: 2px solid #88FFF7;
-    border-radius: 50%;
+    /* border: 2px solid #88FFF7; */
+    /* border-radius: 50%; */
 }
 
 .footer-info{
     margin-left: 20px;
 }
 /* STYLES FOR FOOTER ENDS */
+
+@media (max-width:350px) {
+    #bird{
+        width: 250px;
+    }
+
+    .game-info-image img{
+        width: 250px;
+        height: 375px;
+    }
+}

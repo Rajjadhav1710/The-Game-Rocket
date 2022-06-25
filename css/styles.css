@@ -28,6 +28,10 @@ p{
     background-color: black;
 }
 
+nav{
+    background-color: black !important;
+}
+
 .site-logo img{
     width: 60px;
     height: 60px;
@@ -43,11 +47,16 @@ p{
     margin-right: 20px;
 }
 
-.navigation-links a{
+.nav-item a{
     margin: 0 10px;
     text-decoration: none;
     color: #e337e9;
 }
+
+.nav-item a:hover{
+    color: white;
+}
+  
 /* STYLES FOR HEADER ENDS. */
 
 /* STYLES FOR MAIN SITE CONTENT STARTS. */
@@ -63,18 +72,37 @@ p{
     background-image: url("../img/moon.png");
     background-position: bottom center;
     background-color: black;
+    justify-content: center;
 }
 
 .site-heading{
-    flex: 2;
     text-align: center;
-    line-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.site-heading h1{
+    font-weight: bold;
+    margin-top: 2rem;
 }
 
 .rocket-img{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 }
+
+.astronaut-img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* .astronaut-img img{
+    width: 250ox;
+    height: ;
+} */
 
 .rocket-img img{
     width: 250px;
@@ -102,6 +130,7 @@ p{
 
 .play-games-anytime-info h2 {
    color: #db4bc3;
+   text-align: center;
 }
 
 /* STYLES FOR PLAY GAMES ANYTIME ENDS. */
@@ -110,7 +139,7 @@ p{
 .about-the-game-rocket{
     /* border: 3px solid black; */
 
-    display: flex;
+    
     justify-content: space-around;
     align-items: center;
     height: 100vh;
@@ -128,12 +157,17 @@ p{
     height: 380px;
 }
 
-.about-img{
+/* .about-img{
     margin: 0 20px;
-}
+} */
 
 .about-the-game-rocket-info{
-    margin: 0 100px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-the-game-rocket-info p{
+    margin: 0 20px;
 }
 /* STYLES FOR ABOUT THE GAME ROCKET ENDS. */
 
@@ -169,8 +203,9 @@ p{
     /* border: 3px solid black; */
 
     display: flex;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
+    padding: 5rem 0;
 }
 
 .flappy-bird{
@@ -193,7 +228,13 @@ p{
     background-color: #1d1f21;
 }
 
-.flappy-bird-thumbnail,.sudoku-thumbnail{
+.flappy-bird-info,.sudoku-info{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/* .flappy-bird-thumbnail,.sudoku-thumbnail{
     margin: 0 20px;
 }
 
@@ -203,7 +244,7 @@ p{
 
 .flappy-bird-thumbnail img {
     border-radius: 5px;
-}
+} */
 
 .play-game-button{
     border: 2px solid #db4bc3;;
@@ -214,6 +255,7 @@ p{
     font-size: 20px;
     line-height: 50px;
     border-radius: 5px;
+    margin: 0 auto;
 }
 
 .play-game-button a{
@@ -239,7 +281,8 @@ p{
 }
 
 .about-our-games-info{
-    margin: 0 100px;
+    margin: 0 2rem;
+    text-align: center;
 }
 /* STYLES FOR ABOUT OUR GAMES ENDS. */
 
@@ -283,8 +326,8 @@ p{
 }
 
 .site-footer-logo img{
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .site-footer-info{
