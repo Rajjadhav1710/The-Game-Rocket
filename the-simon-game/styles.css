@@ -1,0 +1,78 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+  user-select: none;
+}
+
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 1px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  /* border-radius: 20%; */
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+  background-image: url("images/iron-man.png");
+  background-size: 50px 50px;
+  border-top-right-radius: 90%;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.green {
+  background-color: green;
+  background-image: url("images/superhero.png");
+  background-size: 50px 50px;
+  border-top-left-radius: 90%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.blue {
+  background-color: blue;
+  background-image: url("images/captain-america-shield.png");
+  background-size: 50px 50px;
+  border-bottom-right-radius: 90%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.yellow {
+  background-color: yellow;
+  background-image: url("images/mjolnir.png");
+  background-size: 50px 50px;
+  border-bottom-left-radius: 90%;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}

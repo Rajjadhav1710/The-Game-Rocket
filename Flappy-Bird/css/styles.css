@@ -5,7 +5,7 @@ body{
     color: white;
     user-select: none;
 }
-
+ 
 /* STYLES FOR HEADER STARTS */
 .site-header{
     
@@ -118,7 +118,7 @@ body{
     /* line-height: 100vh; */
 }
 
-.game-info :nth-child(odd){
+.game-info .container-fluid:nth-child(odd){
     background-color: #082032;
 }
 

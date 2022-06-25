@@ -199,7 +199,7 @@ nav{
     /* border: 3px solid orange; */
 }
 
-.flappy-bird,.sudoku{
+.flappy-bird,.sudoku,.the-simon-game{
     /* border: 3px solid black; */
 
     display: flex;
@@ -228,9 +228,24 @@ nav{
     background-color: #1d1f21;
 }
 
-.flappy-bird-info,.sudoku-info{
+.the-simon-game{
+    border-bottom-color: #e337e9;
+    border-top-width: 0;
+    border-bottom-width: 1px;
+    border-left-width: 0;
+    border-right-width: 0;
+    border-style: solid;
+    background-color: black;
+}
+
+.flappy-bird-info,.sudoku-info,.the-simon-game-info{
     text-align: center;
     margin-top: 3rem;
+}
+
+.the-simon-game-thumbnail img{
+    width: 270px;
+    height: 270px;
 }
 
 
@@ -343,3 +358,18 @@ nav{
 
 
 /* STYLES FOR FOOTER ENDS. */
+@media (max-width:370px) {
+    .site-footer{
+        flex-direction: column;
+    }
+
+    .astronaut-img img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .about-img img,.flappy-bird-thumbnail img,.sudoku-thumbnail img,.the-simon-game-thumbnail img{
+        width: 250px;
+        height: 250px;
+    }
+}
